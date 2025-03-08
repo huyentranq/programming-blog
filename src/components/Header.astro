@@ -1,0 +1,23 @@
+---
+import SearchBar from './SearchBar.astro';
+---
+
+<header class="bg-white dark:bg-gray-800 shadow-sm">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-gray-800 dark:text-white">
+        Programming Blog
+      </a>
+      
+      <div class="flex items-center gap-4">
+        <SearchBar />
+        <a href="/blog" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+          Blog
+        </a>
+        <a href="/about" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+          About
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
